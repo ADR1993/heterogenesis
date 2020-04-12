@@ -11,7 +11,7 @@ library(wbstats)
 library(cowplot)
 
 #set wd
-setwd("C:/Users/Augusto/Desktop/spss/dataset teaching assistant")
+setwd("directory_name")
 
 #load life expectancy data and polish them
 l_exp <- read.csv("life_expectancy.csv", header=F, sep=",")

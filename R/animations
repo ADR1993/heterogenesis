@@ -3,12 +3,10 @@ library(dplyr)
 library(tidyr)
 library(viridis)
 library(stringr)
-library(GGally)
 library(magrittr)
 library(gganimate)
 library(gapminder)
 library(wbstats)
-library(cowplot)
 
 #set wd
 setwd("directory_name")

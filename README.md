@@ -1,1 +1,1 @@
-# heterogenesis
+# heterogony

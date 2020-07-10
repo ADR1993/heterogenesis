@@ -64,8 +64,8 @@ country$groups <- cut(country$mean, breaks = c(seq(0,550,50)),
 #highest and lowest values
 top <- euro_df %>%
   slice_max(average, n=10) %>% #highest values
-  mutate(nuts = case_when(NUTS_NAME == "Norrbottens l‰n" ~ paste(NUTS_NAME, "(SE)"),
-                          NUTS_NAME == "Norrbottens l‰n" ~ paste(NUTS_NAME, "(SE)"),
+  mutate(nuts = case_when(NUTS_NAME == "Norrbottens l√§n" ~ paste(NUTS_NAME, "(SE)"),
+                          NUTS_NAME == "Norrbottens l√§n" ~ paste(NUTS_NAME, "(SE)"),
                           TRUE ~ paste(NUTS_NAME, "(FIN)"))) #add country ISO code
 low <- euro_df %>% 
   slice_min(average, n=10) #lowest values
@@ -120,13 +120,13 @@ low_plot <- ggplot(data=low, aes(reorder(nuts, average), average, label=nuts))+
 
 #prepare additional data and color palette for mapping
 total_eu <- st_union(euro_df) #unite geometry of Europe
-my_palette <- rev(magma(12))  #manual palette for breaks
+palette <- rev(magma(12))  #manual palette for breaks
 
 #plot map
 eu_map <- ggplot()+
   geom_sf(data=na.omit(euro_df), aes(fill=groups), color=NA)+
   geom_sf(data=total_eu, color="white", fill=NA)+
-  scale_fill_manual(values=my_palette,
+  scale_fill_manual(values=palette,
                     guide = guide_legend(keyheight = unit(3, units = "mm"), 
                                          keywidth = unit(12, units = "mm"), 
                                          label.position = "bottom", 
@@ -152,7 +152,7 @@ polar <- ggplot()+
            aes(reorder(country_name, mean), mean, fill=groups),
            color="white",
            stat="identity")+
-  scale_fill_manual(values=my_palette,
+  scale_fill_manual(values=palette,
                     guide = guide_legend(keyheight = unit(3, units = "mm"), 
                                          keywidth = unit(12, units = "mm"), 
                                          label.position = "bottom", 

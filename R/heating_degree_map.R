@@ -70,11 +70,11 @@ top <- euro_df %>%
 low <- euro_df %>% 
   slice_min(average, n=10) #lowest values
 #vector of names to replace encoding problem for Greece
-names_vector <- c(low$NUTS_NAME[1:7], "Dodekanesos", low$NUTS_NAME[9:10])
+names_vector <- c(low$NUTS_NAME[1:7], "Dodekanesos", "Gozo and Comino", low$NUTS_NAME[10])
 #cbind and add country ISO code
 low <- cbind(low, names_vector) %>% 
   mutate(nuts = case_when(names_vector == "Dodekanesos" ~ paste(names_vector, "(EL)"),
-                          names_vector == "Gozo and Comino/Ghawdex u Kemmuna" ~ paste(names_vector, "(MT)"),
+                          names_vector == "Gozo and Comino" ~ paste(names_vector, "(MT)"),
          TRUE ~ paste(names_vector, "(ES)"))) %>% 
   select(-c(names_vector, NUTS_NAME)) %>% 
   mutate(nuts = str_squish(nuts))

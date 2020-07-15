@@ -16,3 +16,7 @@ This is a space where I share data visualizations and maps I create using R. You
 ## Animation of daily excess deaths in the Italian province of Bergamo
 
 ![Bergamo animation](https://github.com/ADR1993/heterogony-of-ends/blob/master/covid_excess_deaths.gif)
+
+## Simpson's diversity index for inner neighborhoods of Rome, Italy
+
+![Roma_diversity](https://github.com/ADR1993/heterogony-of-ends/blob/master/roma_plot.png)

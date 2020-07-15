@@ -12,3 +12,7 @@ This is a space where I share data visualizations and maps I create using R. You
 ## Dot and choropleth map of the Rwandan genocide 
 
 ![Rwanda map](https://github.com/ADR1993/heterogony-of-ends/blob/master/Rwanda_map.jpeg)
+
+## Animation of daily excess deaths in the Italian province of Bergamo
+
+![Bergamo animation](https://github.com/ADR1993/heterogony-of-ends/blob/master/covid_excess_deaths.gif)

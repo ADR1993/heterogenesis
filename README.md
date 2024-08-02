@@ -3,7 +3,7 @@ Welcome! My name is Augusto Dalla Ragione, PhD student at MPI-EVA in Leipzig.
 
 You can follow me on [Twitter](https://twitter.com/AugustoRagione) or connect with me through [Linkedin](https://www.linkedin.com/in/augusto-dalla-ragione-2119271b1/).
 
-This is a space where I share data visualizations and maps I create using R. You can find the scripts for the following visualizations in the R folder of this repository.
+In this repo you can find the R scripts to re-create the following data visualizations.
 
 ## Heating degree days in the European Union
 

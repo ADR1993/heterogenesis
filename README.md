@@ -5,6 +5,10 @@ You can follow me on [Twitter](https://twitter.com/AugustoRagione) or connect wi
 
 In this repo you can find the R scripts to re-create the following data visualizations.
 
+## Jamaica (and Bolt) against the world
+
+![Heating map](https://github.com/ADR1993/heterogony-of-ends/blob/master/100m_plot.png)
+
 ## Heating degree days in the European Union
 
 ![Heating map](https://github.com/ADR1993/heterogony-of-ends/blob/master/heating_map.jpg)
